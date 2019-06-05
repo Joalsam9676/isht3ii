@@ -14,6 +14,20 @@ public class Palindromes1 {
     
     public static void main(String[] args) {
         
+        Palindromes prueba = new Palindromes();
+        
+        System.out.println("Oso es un palindromo: " + prueba.evaluate("oso"));
+        System.out.println("Alejandro es palindromo: " + prueba.evaluate("Alejandro"));
+        System.out.println("66066 es palindromo: " + prueba.evaluate("66066"));
+        System.out.println("A mí me mima es palindromo: " + prueba.evaluate("amimemima"));
+        System.out.println("@ es palindromo: " + prueba.evaluate("@"));
+        System.out.println("& ale &: " + prueba.evaluate("& ale &"));
+        System.out.println("Cadena con espacios: " + prueba.evaluate("       "));
+        System.out.println("Tabulaciones : " + prueba.evaluate("\t a "));
+        System.out.println("12ana21 es palindromo: " + prueba.evaluate("12ana21"));
+        System.out.println("11011: es palindromo: " + prueba.evaluate("11011"));
+        
+    
     }
      /**
    * Iterative solution to this problem. This algorithm has a complexity order in time terms of
@@ -21,18 +35,5 @@ public class Palindromes1 {
    * a complexity order equals to O(1) because we are not using any other data structure to store
    * temporal information.
    */
-  public boolean evaluate(String word) {
-    if (word == null) {
-      throw new IllegalArgumentException("You can't pass a null String as input.");
-    }
-    boolean result = true;
-    int length = word.length();
-    for (int i = 0; i < length / 2; i++) {
-      if (word.charAt(i) != word.charAt(length - 1 - i)) {
-        result = false;
-        break;
-      }
-    }
-    return result;
-  }
+  
 }

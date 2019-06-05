@@ -1,6 +1,6 @@
 
 
-import com.mycompany.isht3ii.funciones.Palindromes1;
+import com.mycompany.isht3ii.funciones.Palindromes;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -18,7 +18,7 @@ public class PalindromesTest {
     public void par(){
         System.out.println("cadena par");
         String palabra = "ANNA";
-        Palindromes1 prueba = new Palindromes1();
+        Palindromes prueba = new Palindromes();
         prueba.evaluate(palabra);
         boolean result = true;
         boolean resultado = prueba.evaluate(palabra);
@@ -29,7 +29,7 @@ public class PalindromesTest {
     public void impar(){
         System.out.println("Cadena impar");
         String palabra = "arañara";
-        Palindromes1 prueba = new Palindromes1();
+        Palindromes prueba = new Palindromes();
         prueba.evaluate(palabra);
         boolean result = true;
         boolean resultado = prueba.evaluate(palabra);
@@ -40,7 +40,7 @@ public class PalindromesTest {
     public void vacia(){
         System.out.println("Cadena Vacia");
         String palabra = "";
-        Palindromes1 prueba = new Palindromes1();
+        Palindromes prueba = new Palindromes();
         prueba.evaluate(palabra);
         boolean result = true;
         boolean resultado = prueba.evaluate(palabra);
@@ -52,7 +52,7 @@ public class PalindromesTest {
         System.out.println("Cadena con espacios");
         String Palabra = "la ruta natural";
         String Palabra2 = "larutanatural";
-        Palindromes1 prueba = new Palindromes1();
+        Palindromes prueba = new Palindromes();
         prueba.evaluate(Palabra);
         boolean result = true;
         boolean resultado = prueba.evaluate(Palabra);
@@ -67,7 +67,7 @@ public class PalindromesTest {
         System.out.println("Cadena COn mayusculas");
         String Palabra = "Atinobonita";
         String Palabra2 = "atinobonita";
-        Palindromes1 prueba = new Palindromes1();
+        Palindromes prueba = new Palindromes();
         prueba.evaluate(Palabra);
         boolean result = true;
         boolean resultado = prueba.evaluate(Palabra);
@@ -80,7 +80,7 @@ public class PalindromesTest {
     public void falso(){
         System.out.println("No es palindromo");
         String palabra = "Alejandro";
-        Palindromes1 prueba = new Palindromes1();
+        Palindromes prueba = new Palindromes();
         prueba.evaluate(palabra);
         boolean result = true;
         boolean resultado = prueba.evaluate(palabra);
@@ -91,7 +91,7 @@ public class PalindromesTest {
     public void saltoLinea(){
         System.out.println("Salto de linea");
         String palabra = " \n ";
-        Palindromes1 prueba = new Palindromes1();
+        Palindromes prueba = new Palindromes();
         prueba.evaluate(palabra);
         boolean result = true;
         boolean resultado = prueba.evaluate(palabra);
@@ -105,7 +105,7 @@ public class PalindromesTest {
         String palabra = "A";
         String Palabra2 = "?";
         String Palabra3 = "=";
-        Palindromes1 prueba = new Palindromes1();
+        Palindromes prueba = new Palindromes();
         prueba.evaluate(palabra);
         boolean result = true;
         boolean resultado = prueba.evaluate(palabra);
